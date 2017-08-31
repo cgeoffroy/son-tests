@@ -22,8 +22,8 @@ SONEMU W '^*** Starting CLI:' 60s
 ### Print nodes
 SONEMU Cmd 'nodes'
 
-SONCLI son-access -p emu push --upload son-examples/service-projects/sonata-empty-service.son
-SONCLI son-access -p emu push --deploy latest
+SONCLI son-access --platform emu push --upload son-examples/service-projects/sonata-empty-service.son
+SONCLI son-access --platform emu push --deploy latest
 
 SONEMU son-emu-cli compute list
 SONEMU sync # avoid text overlapping
