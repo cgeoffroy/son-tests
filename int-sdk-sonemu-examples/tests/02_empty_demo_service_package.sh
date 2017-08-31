@@ -37,12 +37,12 @@ SONEMU W "^... checked empty_vnf3"
 ### Warning: while executing the echo command, the name of a nvf is substituted by its ip
 SONEMU Cmd 'empty_vnf1 ping -v -c 2 empty_vnf2 && sync && echo -e "\\n... checked ping between Empty_vnf1 and Empty_vnf2"'
 SONEMU W "^... checked ping between Empty_vnf1 and Empty_vnf2"
-SONEMU Cmd 'empty_vnf1 ping -v -c 2 200.0.0.2 && sync && echo -e "\\n... checked ping between Empty_vnf1 and 200.0.0.2"'
-SONEMU W "^... checked ping between Empty_vnf1 and 200.0.0.2"
+SONEMU Cmd 'empty_vnf1 ping -v -c 2 10.30.1.2 && sync && echo -e "\\n... checked ping between Empty_vnf1 and 10.30.1.2"'
+SONEMU W "^... checked ping between Empty_vnf1 and 10.30.1.2"
 SONEMU Cmd 'empty_vnf2 ping -v -c 2 empty_vnf1 && sync && echo -e "\\n... checked ping between Empty_vnf2 and Empty_vnf1"'
 SONEMU W "^... checked ping between Empty_vnf2 and Empty_vnf1"
-SONEMU Cmd 'empty_vnf2 ping -v -c 2 200.0.0.1 && sync && echo -e "\\n... checked ping between Empty_vnf2 and 200.0.0.1"'
-SONEMU W "^... checked ping between Empty_vnf2 and 200.0.0.1"
+SONEMU Cmd 'empty_vnf2 ping -v -c 2 10.30.0.1 && sync && echo -e "\\n... checked ping between Empty_vnf2 and 10.30.0.1"'
+SONEMU W "^... checked ping between Empty_vnf2 and 10.30.0.1"
 
 SONEMU Cmd 'quit'
 SONEMU W "^*** Done"
