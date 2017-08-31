@@ -41,8 +41,8 @@ SONEMU Cmd 'empty_vnf1 ping -v -c 2 10.30.1.2 && sync && echo -e "\\n... checked
 SONEMU W "^... checked ping between Empty_vnf1 and 10.30.1.2"
 SONEMU Cmd 'empty_vnf2 ping -v -c 2 empty_vnf1 && sync && echo -e "\\n... checked ping between Empty_vnf2 and Empty_vnf1"'
 SONEMU W "^... checked ping between Empty_vnf2 and Empty_vnf1"
-SONEMU Cmd 'empty_vnf2 ping -v -c 2 10.30.0.1 && sync && echo -e "\\n... checked ping between Empty_vnf2 and 10.30.0.1"'
-SONEMU W "^... checked ping between Empty_vnf2 and 10.30.0.1"
+SONEMU Cmd 'empty_vnf1 ping -v -c 2 10.0.0.8 && sync && echo -e "\\n... checked ping between Empty_vnf1 and 10.0.0.8"'
+SONEMU W "^... checked ping between Empty_vnf1 and 10.0.0.8"
 
 SONEMU Cmd 'quit'
 SONEMU W "^*** Done"
