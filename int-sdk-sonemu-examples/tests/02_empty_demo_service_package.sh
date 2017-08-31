@@ -32,6 +32,8 @@ SONEMU Cmd 'empty_vnf1 ifconfig && sync && echo -e "\\n... checked empty_vnf1"'
 SONEMU W "^... checked empty_vnf1"
 SONEMU Cmd 'empty_vnf2 ifconfig && sync && echo -e "\\n... checked empty_vnf2"'
 SONEMU W "^... checked empty_vnf2"
+SONEMU Cmd 'empty_vnf3 ifconfig && sync && echo -e "\\n... checked empty_vnf3"'
+SONEMU W "^... checked empty_vnf3"
 ### Warning: while executing the echo command, the name of a nvf is substituted by its ip
 SONEMU Cmd 'empty_vnf1 ping -v -c 2 empty_vnf2 && sync && echo -e "\\n... checked ping between Empty_vnf1 and Empty_vnf2"'
 SONEMU W "^... checked ping between Empty_vnf1 and Empty_vnf2"
